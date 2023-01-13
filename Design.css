@@ -1,0 +1,15 @@
+#menu-container {
+    display: flex;
+}
+  
+#sidebar-menu {
+    width: 10%;
+    overflow: auto;
+}
+  
+#menu-table-container {
+    width: 90%;
+}
+body{
+    background-color: bisque;
+}
