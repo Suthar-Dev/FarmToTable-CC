@@ -1,0 +1,238 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden
+}
+
+#header {
+    width: 100%;
+    background-image: url("headerbg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    height: 100px;
+    display: block;
+}
+
+.logo {
+    float: left;
+    font-family: 'Brush Script MT', cursive;
+    display: block;
+    font-size: 30px;
+    margin: 30px -48px;
+    word-spacing: 8px;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.Logo{
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 455px;
+}
+
+.slideshow-container {
+
+    position: relative;
+    overflow: hidden;
+    height: 455px;
+    z-index: 1;
+    opacity: 50%;
+
+}
+
+.slideshow-container img{
+    object-fit: cover;
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.active {
+    background-color: #717171;
+}
+
+
+.fade {
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+
+
+
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#flipbook-container {
+    width: 900px;
+    height: 600px;
+    position: relative;
+    background-color: lightgray;
+}
+
+#flipbook-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#flipbook-nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#flipbook-nav img {
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    align-items: center;
+}
+
+
+
+
+
+
+.Pay{
+    background-color: #ffffff;
+    min-height: 30%;
+    color: #579667;
+    padding: 5px;
+    font-size: 50px;
+    width: 100%;
+}
+
+.TextPay{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-end;
+    justify-content: center;
+    float: left;
+    width: 35%;
+    overflow: hidden;
+    height: 400px;
+    flex-wrap: nowrap;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.QRCode{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    float: right;
+    width: 65%;
+    overflow: hidden;
+    height: 400px;
+}
+.QRCode img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+hr {
+    border: 0.5px solid #D2AB66;
+    width: 60%;
+    justify-content: center;
+}
+
+.FooterBox {
+    background-color: #579667;
+    min-height: 30%;
+    color: #ffffff;
+    padding: 5px;
+    font-size: large;
+}
+
+
+
+.Map{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 50%;
+    overflow: hidden;
+    border-right: 3px solid #D2AB66;
+    height: 300px;
+    flex-wrap: nowrap;
+}
+
+.Map p{
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Map img{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.Info{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    float: right;
+    width: 49%;
+    overflow: hidden;
+    height: 300px;
+}
+
+.Info1 p{
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Info2 a{
+    color: #f2f2f2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+.Info2 a:hover{
+    color: #D2AB66;
+}
